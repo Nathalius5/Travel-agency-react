@@ -1,0 +1,67 @@
+.container {
+  padding-top: 80px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.dark {
+  --bg-color: #333;
+  --text-color: #fff;
+}
+
+.folders {
+  display: flex;
+  padding: 0 20px;
+  margin-top: 40px;
+}
+
+.folder {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: gray;
+  color: #fff;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.folder.selected {
+  background-color: #000000;
+}
+
+.folder-text {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  width: auto;
+  padding: 20px;
+  background-color: gray;
+  border-radius: 20px;
+  margin: 30px 30px 0 30px;
+  min-height: 180px;
+}
+
+.dark .title {
+  color: #fff;
+}
+
+.dark .product h3 {
+  color: #fff;
+}
+
+.dark .folder-text {
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .folders {
+    flex-direction: column;
+  }
+  .folder {
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+  }
+  .folder-text {
+    font-size: 1rem;
+  }
+}

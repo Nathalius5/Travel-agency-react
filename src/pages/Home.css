@@ -1,0 +1,122 @@
+.dark {
+  --bg-color: #333;
+  --text-color: #fff;
+}
+
+.title,
+.dark .title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--title-color);
+  text-align: center;
+  text-decoration: underline;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-image {
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.center-content {
+  margin-top: 40px;
+}
+
+.featured-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product,
+.dark .product {
+  margin: 20px;
+  text-align: center;
+}
+
+.product img,
+.dark .product img {
+  width: 280px;
+  height: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.product img:hover,
+.dark .product img:hover {
+  transform: scale(1.1);
+}
+
+.product h3,
+.dark .product h3 {
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
+.changing-text,
+.dark changing-text {
+  color: var(--text-color);
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  font-size: 25px;
+}
+
+.product-text-container {
+  width: 280px;
+  height: 100px;
+  background-color: gray;
+  border-radius: 10px;
+}
+
+.product-text-container p {
+  font-size: 18px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.buy-button{
+  margin: 5px;
+  background-color: #464646;
+}
+
+@media only screen and (max-width: 768px) {
+  .title,
+  .dark .title {
+    font-size: 1.8rem;
+  }
+  .changing-text {
+    font-size: 18px;
+  }
+
+  .background-image {
+    width: 300px;
+    height: 200px;
+  }
+
+  .product img,
+.dark .product img{
+width: 200px;
+height: 150px;
+}
+
+.product-text-container{
+  width: 200px;
+  height: 75px;
+}
+.product-text-container p{
+  font-size: 14px;
+  padding: 5px;
+  margin: 5px;
+}
+}
